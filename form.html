@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registeration Form</title>
+</head>
+
+<body>
+    <h1>Register for your favorite courses by filling the below form</h1>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <h2>Gender</h2>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <p>There are lots of courses available you can choose one or more among that based on your choice</p>
+        <div style="color: rgb(0, 12, 9);">you can choose full stack by choosing both or specifically</div>
+        <div style="color: rgb(0, 11, 7);">frontend or backend</div><br>
+        <h2>Course</h2><br>
+        <input type="checkbox" id="frontend" name="course" value="frontend">
+        <label for="frontend">FrontEnd</label><br>
+        <input type="checkbox" id="backend" name="course" value="backend">
+        <label for="backend">BackEnd</label><br><br>
+        <label for="frontend courses">Choose a Frontend Course</label><br><br>
+        <select id="frontend courses" name="frontend courses" size="2" multiple>
+            <option value="react">React</option><br>
+            <option value="angular">Angular</option><br>
+        </select><br><br>
+        <label for="backend courses">Choose a backend Course</label><br><br>
+        <select id="backend courses" name="backend courses">
+            <option value="Java">Java</option><br>
+            <option value=".net">Dotnet</option><br>
+        </select><br><br>
+        <h4>Any suggestions you want to add</h4>
+        <textarea id="comments" name="comments" rows="4" cols="50"
+            placeholder="Enter your comments here..."></textarea><br><br>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
