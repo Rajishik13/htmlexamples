@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="IncreasCount()">Click Me</button>
+        <div id="count">0</div>
+        <script>
+            let count = 0;
+
+            function IncreasCount() {
+                count++;
+                document.getElementById("count").innerHTML = count;
+            }
+        </script>
+    </body>
+</html>
